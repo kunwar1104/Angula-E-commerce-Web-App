@@ -1,0 +1,39 @@
+.commen-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+}
+.form-input{
+height: 35px;
+margin-bottom: 10px;
+}
+.form-button{
+    height: 35px;
+}
+.auth-toggle-link{
+    font-size: 15;
+    cursor: pointer;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-login{
+    // margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titlt{
+    margin-bottom: 50px;
+}
+.error{
+    color: red;
+}

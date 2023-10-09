@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid bg-info">
+    <a class="navbar-brand" routerLink="">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Here is the toggle navbar -->
+    <div [ngSwitch]="menuType" class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul *ngSwitchCase="'default'" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/"><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-auth"><b>Seller-Auth</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="user-auth"><b>Signup-Login</b></a>
+        </li>
+      </ul>
+
+      <ul *ngSwitchCase="'user'" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/"><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ><i><b>{{userName| titlecase}}</b></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="userLogOut()"><b>Logout</b></a>
+        </li>
+      </ul>
+
+      <ul *ngSwitchCase="'seller'" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" (click)="logout()"><b>LogOut</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-home"><b>List</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><b>{{sellerName | titlecase}}</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-add-pro"><b>Add Produt</b></a>
+        </li>
+      </ul>
+
+
+      <div *ngIf="menuType ==='default'" class="d-flex">
+        <input type="text" class=" me-2" #searchInput (blure)="hideSearch()" placeholder="Search Product"
+          (keyup)="serchProduct($event)">
+        <button class="btn btn-primary" (click)="submitSerch(searchInput.value)" type="submit">Search</button>
+        <ul class="suggested-search" *ngIf="searchResult">
+          <li *ngFor="let item of searchResult  ">
+            <a (mousedown)="redirectToDetails(item.id)"> {{item.name}}</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</nav>

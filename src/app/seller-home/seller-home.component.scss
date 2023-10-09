@@ -1,0 +1,31 @@
+.product-list{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+ width: 70%;
+}
+table{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    text-align: left ;
+    color: cadetblue;
+}
+img{
+    height: 200px;
+    width: 250px;
+}
+table td , table th{
+    border: 1px solid silver;
+    padding: 15px;
+    width: 160px;
+}
+.delete-message{
+    color: rgb(7, 125, 7);
+}
+.update-btn{
+    color: blue;
+    margin-left: 20px;
+}

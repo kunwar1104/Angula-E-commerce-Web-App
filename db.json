@@ -1,0 +1,95 @@
+{
+  "seller": [
+    {
+      "name": "HARSHVIR",
+      "password": "123",
+      "email": "harshvirsinh1104@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "abc",
+      "password": "123456",
+      "email": "harshvirsinh1104@gamil.com",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "i phone 15 pro max",
+      "price": "150000",
+      "category": "mobile",
+      "color": "black",
+      "description": "i phone 15 pro max Most expensive model",
+      "image": "https://www.nalandaopenuniversity.com/wp-content/uploads/2023/09/Iphone-15-Pro-Price-1-1024x923.jpeg",
+      "id": 1
+    },
+    {
+      "name": "samsung s23 Ultra",
+      "price": "79000",
+      "category": "mobile",
+      "color": "black",
+      "description": "samsung s23 Ultra 200mp camera",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNK5j6k7A-H5cy9nuuJrCXwVcvyxpZX72cfg&usqp=CAU",
+      "id": 2
+    },
+    {
+      "name": "MacBook Pro",
+      "price": "250000",
+      "category": "Laptop",
+      "color": "black",
+      "description": "MacBook Pro, M2 chip, 2Tb ram",
+      "image": "https://i.ytimg.com/vi/SDU5Lgqi-IY/maxresdefault.jpg",
+      "id": 3
+    },
+    {
+      "name": "i watch ultra-2",
+      "price": "89000",
+      "category": "watch",
+      "color": "black",
+      "description": "i watch ultra-2,GPS,Call ",
+      "image": "https://www.apple.com/in/watch/home/images/overview/ultra/tile_ultra_2__cu2x3w2l0zwy_small.jpg",
+      "id": 4
+    },
+    {
+      "name": "Nike  ",
+      "price": "125000",
+      "category": "Shoes",
+      "color": "black",
+      "description": "Nike Shoes for football ",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTBnCtm9h2sJVFS8O2Jg7vono8D-Mer_g0zec7KFXocBmm4rk2TtoouOraXFdAV_RoiMI&usqp=CAU",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "name": "HARSHVIR",
+      "email": "harshvirsinh1104@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "HARSHVIR",
+      "email": "harshvirsinh1104@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "name": "HARSHVIR",
+      "email": "harshvirsinh1104@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "HARSHVIR",
+      "email": "harshvirsinh1104@gmail.com",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "HARSHVIR",
+      "email": "harshvirsinh1104@gmail.com",
+      "password": "123",
+      "id": 5
+    }
+  ]
+}
